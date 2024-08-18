@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
+  <title>Calculadora</title>
+</head>
+<body>
+    <div id="calculator" class="container mt-5 p-3">
+      <input id="display" class="form-control mb-3" readonly>
+      <div id="keys" class="row">
+        <button id="add" onClick="appendToDisplay('+')" class="btn-custom btn-operator col">+</button>
+        <button id="subtract" onClick="appendToDisplay('-')" class="btn-custom btn-operator col">-</button>
+        <button id="multiply" onClick="appendToDisplay('*')" class="btn-custom btn-operator col">*</button>
+        <button id="divide" onClick="appendToDisplay('/')" class="btn-custom btn-operator col">/</button>
+        <button id="one" onClick="appendToDisplay('1')" class="btn-custom btn-number col">1</button>
+        <button id="two" onClick="appendToDisplay('2')" class="btn-custom btn-number col">2</button>
+        <button id="three" onClick="appendToDisplay('3')" class="btn-custom btn-number col">3</button>
+        <button id="decimal" onClick="appendToDisplay('.')" class="btn-custom btn-number col">.</button>
+        <button id="four" onClick="appendToDisplay('4')" class="btn-custom btn-number col">4</button>
+        <button id="five" onClick="appendToDisplay('5')" class="btn-custom btn-number col">5</button>
+        <button id="six" onClick="appendToDisplay('6')" class="btn-custom btn-number col">6</button>
+        <button id="clear" onClick="clearDisplay()" class="btn-custom btn-danger col">C</button>
+        <button id="seven" onClick="appendToDisplay('7')" class="btn-custom btn-number col">7</button>
+        <button id="eight" onClick="appendToDisplay('8')" class="btn-custom btn-number col">8</button>
+        <button id="nine" onClick="appendToDisplay('9')" class="btn-custom btn-number col">9</button>
+        <button id="zero" onClick="appendToDisplay('0')" class="btn-custom btn-number col">0</button>
+        <button id="equals" onClick="calculate()" class="btn-custom btn-equals col">=</button>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
