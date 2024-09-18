@@ -2,10 +2,7 @@
   text-align: center;
 }
 
-#quote-box {
-  align-items: center;
-  display: flex;
-  height: 100vh;
+#author {
+  padding-top: 15px;
 }
-
 

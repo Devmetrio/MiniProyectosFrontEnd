@@ -2,8 +2,18 @@ import './App.css';
 import QuoteMachine from './components/QuoteMachine';
 import React, { useState, useEffect } from 'react';
 import random from 'lodash/random';
-import { Grid } from '@material-ui/core';
+import { Grid } from '@mui/material';
 
+
+
+const styles = {
+  container: {
+    alignItems: 'center',
+    display: 'flex',
+    height: '100vh',
+    justifyContent: 'center',
+  }
+}
 
 
 function App() {
@@ -42,9 +52,13 @@ function App() {
   const quote = selectQuote();
 
   return (
-    <Grid id="quote-box" justifyContent="center" container >
-      <Grid xs={5} item>
-      <QuoteMachine quote={quote} generateNewQuoteIndex={generateNewQuoteIndex} />
+    <Grid id="quote-box" container sx={styles.container}>
+      <Grid xs={11} lg={5} item>
+        {
+          quote ? 
+          <QuoteMachine quote={quote} generateNewQuoteIndex={generateNewQuoteIndex} />
+          : null
+        }
       </Grid>
     </Grid>
   );
